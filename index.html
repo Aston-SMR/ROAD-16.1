@@ -13022,7 +13022,7 @@ function v817SetRoadHeader(statusText){
   const s=v817RoadDataSummary();
   const total=Number(s.totalCount).toLocaleString("zh-TW");
   const sourceTotal=Number(s.sourceCount).toLocaleString("zh-TW");
-  samples.innerHTML=`<span class="road-source-stats">${s.source}｜本靴 ${s.currentCount}局｜${s.source}學習 ${sourceTotal}局</span><span class="road-learning-status">全部學習 ${total}局／${s.shoeCount}靴｜${statusText||"V86.5.16｜待計算"}</span>`;
+  samples.innerHTML=`<span class="road-source-stats">${s.source}｜本靴 ${s.currentCount}局｜${s.source}學習 ${sourceTotal}局</span><span class="road-learning-status">全部學習 ${total}局／${s.shoeCount}靴｜${statusText||"V16.1｜待計算"}</span>`;
 }
 function v817RefreshRoadHeaderStats(){
   const current=document.querySelector("#roadSamples .road-learning-status")?.textContent||"V86.5.16｜待計算";
